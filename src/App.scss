@@ -1,5 +1,15 @@
+@import url("https://homegroupsignindevtest.blob.core.windows.net/hmssignin/font.css");
+
 .App {
   text-align: center;
+}
+
+.logo {
+  width: 10em;
+  position: absolute;
+  margin-bottom: 10em;
+  margin-left: 2em;
+  opacity: 0.2;
 }
 
 .App-logo {

@@ -1,13 +1,17 @@
 import React from "react";
+import "./App.scss";
 import ReactDOM from "react-dom";
 import Title from "./slides/title";
 import Intro from "./slides/intro";
+import Planning from "./slides/planning";
+import InitialDesign from "./slides/initial-design";
+import AddInteractive from "./slides/add-interactive";
 import Slide3 from "./slides/slide3";
 import Slide4 from "./slides/slide4";
 import Slide5 from "./slides/slide5";
 import Slide6 from "./slides/slide6";
 import Slide7 from "./slides/slide7";
-import { theme, template, formidableLogo, cppCodeBlock } from "./theme";
+import { theme, template, cppCodeBlock } from "./theme";
 import {
   Appear,
   Box,
@@ -42,8 +46,19 @@ const Presentation = () => (
       <Intro />
     </Slide>
 
+    <Slide>
+      <Planning />
+    </Slide>
+
+    <Slide>
+      <InitialDesign />
+    </Slide>
+
+    <Slide>
+      <AddInteractive />
+    </Slide>
+
     <Slide
-      backgroundColor="tertiary"
       backgroundImage="url(https://github.com/FormidableLabs/dogs/blob/main/beau.jpg?raw=true)"
       backgroundOpacity={0.5}
     >

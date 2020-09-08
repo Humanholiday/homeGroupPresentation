@@ -1,4 +1,6 @@
 import React from "react";
+import "./App.scss";
+import logo from "./logo.svg";
 import {
   Appear,
   Box,
@@ -26,8 +28,8 @@ import {
 // SPECTACLE_CLI_THEME_START
 export const theme = {
   fonts: {
-    header: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
-    text: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
+    header: '"Trueno", Helvetica, Arial, sans-serif',
+    text: '"Trueno", Helvetica, Arial, sans-serif',
   },
 };
 // SPECTACLE_CLI_THEME_END
@@ -40,6 +42,7 @@ export const template = () => (
     bottom={0}
     width={1}
   >
+    <img className="logo" src={logo} />
     <Box padding="0 1em">
       <FullScreen />
     </Box>
@@ -53,41 +56,100 @@ export const template = () => (
 export const formidableLogo =
   "https://avatars2.githubusercontent.com/u/5078602?s=280&v=4";
 
-export const cppCodeBlock = indentNormalizer(`
-#include <iostream>
-#include <cstdlib>
-#include <sstream>
-#include <pthread.h>
-struct thread_data_t
-{
-   int  thread_id;
-   std::string message;
-};
-void *print_thread_message(void *thread_arg)
-{
-   struct thread_data_t *thread_data;
-   thread_data = (struct thread_data_t *) thread_arg;
-   cout << "Thread ID: " << thread_data->thread_id;
-   cout << "Message: " << thread_data->message << endl;
-   pthread_exit(NULL);
-}
-int main()
-{
-  pthread_t threads[NUM_THREADS];
-  struct thread_data_t thread_data[NUM_THREADS];
-  for (int i = 0; i < NUM_THREADS; i++)
-  {
-    auto curried_add = [](int x) -> function<int(int)> { return [=](int y) { return x + y; }; };
-    auto answer = curried_add(i)(5);
-    std::stringstream message;
-    message << "The math result is " << answer << "!";
-    thread_data.thread_id = i;
-    thread_data.message = message.str();
-    int err = pthread_create(&threads, NULL, print_thread_message, (void *)&thread_data[i]);
-    if (err)
-    {
-      exit(-1)
-    }
+export const initialCodeBlock = indentNormalizer(`
+**React** 
+
+import React from "react";
+import Header from "./header";
+import SignInForm from "./sign-in-form";
+import Contact from "./contact";
+import "../App.scss";
+
+export default class Layout extends React.Component {
+  render() {
+    return (
+      <div className="content">
+        <Header />
+        <SignInForm />
+        <Contact />
+      </div>
+    );
   }
-  return 0;
+}
+
+**SASS**
+
+//Login Main Container
+.login {
+  max-width: 40em;
+  width: 100%;
+  max-height: 40em;
+  height: 100%;
+  //min-height: 44em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+  border-radius: 2em;
+  position: relative;
+  padding: 17px 10px;
 }`);
+
+export const interCodeBlock = indentNormalizer(`
+**Link to homepage** 
+
+  <div className="image">
+    <a href="https://www.homegroup.org.uk/">
+      <img src={logo} />
+    </a>
+  </div>
+
+**Dynamic greeting** 
+
+  //change greeting depending on time of day.
+  const date = new Date();
+  const currentTime = date.getHours();
+
+  let greeting;
+
+  if (currentTime < 12) {
+    greeting = "morning";
+  } else if (currentTime < 18) {
+    greeting = "afternoon";
+  } else {
+    greeting = "evening";
+  }
+
+  **Contact Us** 
+
+  <div className="contact">
+    <p>
+      Having Issues?&nbsp;
+      <a href="https://www.homegroup.org.uk/get-in-touch/">Talk to us.</a>
+    </p>
+  </div>
+
+  **Hover**
+
+  input {
+          box-shadow: 0 0 1px 0.3px $border;
+          transition: all 250ms ease-in-out;
+          &:hover {
+            background-color: $white;
+            box-shadow: 0 0 4px 0.3px $light-green;
+          }
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 4px 0.8px $base-green;
+          }
+        }
+
+
+
+
+
+
+
+
+`);

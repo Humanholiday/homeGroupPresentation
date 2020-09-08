@@ -28,20 +28,28 @@ export default class Intro extends React.Component {
     return (
       <div>
         <FlexBox height="100%" flexDirection="column">
-          <Heading margin="0px" fontSize="150px">
+          {/* <Heading margin="0px" fontSize="150px">
             ✨<i>Spectacle</i> ✨
-          </Heading>
+          </Heading> */}
           <Heading margin="0px" fontSize="h2">
-            A ReactJS Presentation Library
+            The Objective
           </Heading>
-          <Heading margin="0px 32px" color="primary" fontSize="h3">
-            Where you can write your decks in JSX, Markdown, or MDX!
+          <Heading margin="0px 32px" color="primary" fontSize="45px">
+            To put into practice my knowledge of React and Sass.
+          </Heading>
+          <Heading margin="0px 32px" color="primary" fontSize="45px">
+            Create a Login screen with a clean, attractive, responsive and
+            interactive UI.
           </Heading>
         </FlexBox>
         <Notes>
           <p>
-            Notes are shown in presenter mode. Open up
-            localhost:3000/?presenterMode=true to see them.
+            Built with React Sass My Objective To create a Login screen with a
+            clean, attractive, responsive and interactive UI. To add
+            interactivity where possible, with cursor highlighting, form
+            validation and an animated Sign In button. Use a sympathetic colour
+            palette. Packages - Outside of the standard dependencies created by
+            create-react-app and installing Sass I used - react-progress-button
           </p>
         </Notes>
       </div>

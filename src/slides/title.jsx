@@ -27,8 +27,8 @@ export default class Title extends React.Component {
   render() {
     return (
       <FlexBox height="100%">
-        <Heading margin="0px" fontSize="150px">
-          <i>Design to Reality Project</i>
+        <Heading margin="0px" fontSize="120px">
+          <div>Design to Reality Login Screen</div>
         </Heading>
       </FlexBox>
     );

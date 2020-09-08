@@ -24,11 +24,11 @@ import {
   indentNormalizer,
 } from "spectacle";
 
-export default class Slide4 extends React.Component {
+export default class InitialDesign extends React.Component {
   render() {
     return (
       <div>
-        <Heading>Code Blocks</Heading>
+        <Heading>Initial Design</Heading>
         <Stepper
           defaultValue={[]}
           values={[
@@ -75,8 +75,9 @@ export default class Slide4 extends React.Component {
           )}
         </Stepper>
         <Text>
-          Code Blocks now auto size and scroll when there is an overflow of
-          content! They also auto-wrap longer lines.
+          I created the main login container, then added the component files I
+          thought were needed. I started with a basic header and form and did
+          some basic styling.
         </Text>
       </div>
     );
