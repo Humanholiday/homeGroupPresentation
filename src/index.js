@@ -8,6 +8,12 @@ import InitialDesign from "./slides/initial-design";
 import AddInteractive from "./slides/add-interactive";
 import AnimatedSubmit from "./slides/animated-submit";
 import Validation from "./slides/validation";
+import Responsive from "./slides/responsive";
+import TidyUp from "./slides/tidy-up";
+import Positives from "./slides/positives";
+import Improvements from "./slides/improvements";
+import BonusIntro from "./slides/bonus-intro";
+
 import Slide3 from "./slides/slide3";
 import Slide4 from "./slides/slide4";
 import Slide5 from "./slides/slide5";
@@ -66,6 +72,26 @@ const Presentation = () => (
 
     <Slide>
       <Validation />
+    </Slide>
+
+    <Slide>
+      <Responsive />
+    </Slide>
+
+    <Slide>
+      <TidyUp />
+    </Slide>
+
+    <Slide>
+      <Positives />
+    </Slide>
+
+    <Slide>
+      <Improvements />
+    </Slide>
+
+    <Slide>
+      <BonusIntro />
     </Slide>
 
     <Slide

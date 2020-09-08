@@ -200,3 +200,28 @@ export const validCodeBlock = indentNormalizer(`
 
 
 `);
+
+export const responseCodeBlock = indentNormalizer(`
+  .login {
+          max-width: 40em;
+          width: 100%;
+          max-height: 40em;
+          height: 100%;
+          //min-height: 44em;
+          display: flex;
+          position: relative;
+          @media (max-height: 600px) {
+            height: auto;
+            position: absolute;
+            top: 0;
+            width: 90%;
+  }
+
+.greeting {
+        font-size: 1.8em;
+        margin-top: 0.5em;
+        @media screen and (max-width: 600px) {
+          font-size: 1.4em;
+        }
+      }
+`);
