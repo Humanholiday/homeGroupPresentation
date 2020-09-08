@@ -144,12 +144,59 @@ export const interCodeBlock = indentNormalizer(`
             box-shadow: 0 0 4px 0.8px $base-green;
           }
         }
+`);
 
+export const submitCodeBlock = indentNormalizer(`
+render() {
+    return (
+      <div className="button">
+        <ProgressButton
+          type="submit"
+          onClick={this.handleClick}
+          state={this.state.buttonState}
+        >
+          Sign In
+        </ProgressButton>
+      </div>
+    );
+  }
+`);
 
+export const validCodeBlock = indentNormalizer(`
 
+ // Email validation with regex.
+  validateEmail = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(String(email).toLowerCase()))
+      this.setErrors({ email: "Email is invalid" });
+    else this.setErrors({ email: "" });
+  };
 
+  //On change function to check validation only if user has inputted text, left then returned.
+  //this enables the error message to disappear without the user needing to exit the input.
+  handleInputChange = (e) => {
+    if (e.target.name === "email" && this.state.errors.email.length > 0) {
+      this.validateEmail(e.target.value);
+    }
+    if (e.target.name === "password" && this.state.errors.password.length > 0) {
+      this.validatePassword(e.target.value);
+    }
+    this.setState({
+      values: {
+        ...this.state.values,
+        [e.target.name]: e.target.value,
+      },
+    });
+  };
 
-
+    //Password validation - 8 characters min.
+  validatePassword = (password) => {
+    if (password.length < 8)
+      this.setErrors({
+        password: "Password must have at least 8 characters",
+      });
+    else this.setErrors({ password: "" });
+  };
 
 
 `);

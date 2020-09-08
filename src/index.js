@@ -6,6 +6,8 @@ import Intro from "./slides/intro";
 import Planning from "./slides/planning";
 import InitialDesign from "./slides/initial-design";
 import AddInteractive from "./slides/add-interactive";
+import AnimatedSubmit from "./slides/animated-submit";
+import Validation from "./slides/validation";
 import Slide3 from "./slides/slide3";
 import Slide4 from "./slides/slide4";
 import Slide5 from "./slides/slide5";
@@ -56,6 +58,14 @@ const Presentation = () => (
 
     <Slide>
       <AddInteractive />
+    </Slide>
+
+    <Slide>
+      <AnimatedSubmit />
+    </Slide>
+
+    <Slide>
+      <Validation />
     </Slide>
 
     <Slide
