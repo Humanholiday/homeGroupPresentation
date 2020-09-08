@@ -29,12 +29,13 @@ export default class AddInteractive extends React.Component {
     return (
       <div>
         <Heading>Add Interactivity</Heading>
-
         <CodePane fontSize={18} language="javascript" autoFillHeight="true">
           {interCodeBlock}
         </CodePane>
 
-        <Text>Link to homepage, dynamic greeting, contact us, hover</Text>
+        <Heading margin="10px 62px" color="quaternary" fontSize="40px">
+          Link to homepage, dynamic greeting, contact us, hover
+        </Heading>
       </div>
     );
   }

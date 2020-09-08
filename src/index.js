@@ -13,12 +13,10 @@ import TidyUp from "./slides/tidy-up";
 import Positives from "./slides/positives";
 import Improvements from "./slides/improvements";
 import BonusIntro from "./slides/bonus-intro";
-
-import Slide3 from "./slides/slide3";
-import Slide4 from "./slides/slide4";
-import Slide5 from "./slides/slide5";
-import Slide6 from "./slides/slide6";
-import Slide7 from "./slides/slide7";
+import PresPositives from "./slides/pres-positives";
+import PresImprovements from "./slides/pres-improve";
+import Final from "./slides/final";
+import "./images/HGLoginFull.png";
 import { theme, template, cppCodeBlock } from "./theme";
 import {
   Appear,
@@ -46,7 +44,11 @@ import {
 
 const Presentation = () => (
   <Deck theme={theme} template={template} transitionEffect="fade">
-    <Slide>
+    <Slide
+      backgroundImage="src(./images/HGLoginFull.png)"
+      backgroundOpacity={0.8}
+      backgroundSize="50%"
+    >
       <Title />
     </Slide>
 
@@ -74,7 +76,11 @@ const Presentation = () => (
       <Validation />
     </Slide>
 
-    <Slide>
+    <Slide
+      backgroundImage="url(https://www.acidgreen.com.au/wp-content/uploads/2020/05/iStock-612224522.jpg)"
+      backgroundOpacity={0.1}
+      backgroundSize="100%"
+    >
       <Responsive />
     </Slide>
 
@@ -90,55 +96,33 @@ const Presentation = () => (
       <Improvements />
     </Slide>
 
-    <Slide>
+    <Slide
+      backgroundImage="url(https://raw.githubusercontent.com/FormidableLabs/spectacle/main/docs/src/assets/logo_spectacle.png)"
+      backgroundOpacity={0.1}
+      backgroundSize="50%"
+    >
       <BonusIntro />
     </Slide>
 
     <Slide
-      backgroundImage="url(https://github.com/FormidableLabs/dogs/blob/main/beau.jpg?raw=true)"
-      backgroundOpacity={0.5}
+      backgroundImage="url(https://raw.githubusercontent.com/FormidableLabs/spectacle/main/docs/src/assets/logo_spectacle.png)"
+      backgroundOpacity={0.1}
+      backgroundSize="50%"
     >
-      <Slide3 />
+      <PresPositives />
     </Slide>
 
-    <Slide transitionEffect="slide">
-      <Slide4 />
-    </Slide>
-
-    <Slide>
-      <Slide5 />
-    </Slide>
-
-    <Slide>
-      <Slide6 />
+    <Slide
+      backgroundImage="url(https://raw.githubusercontent.com/FormidableLabs/spectacle/main/docs/src/assets/logo_spectacle.png)"
+      backgroundOpacity={0.1}
+      backgroundSize="50%"
+    >
+      <PresImprovements />
     </Slide>
 
     <Slide>
-      <Slide7 />
+      <Final />
     </Slide>
-
-    <Markdown containsSlides>
-      {`
-        ### Even write multiple slides in Markdown
-        > Wonderfully formatted quotes
-        1. Even create
-        2. Lists in Markdown
-        - Or Unordered Lists
-        - Too!!
-        Notes: These are notes
-        ---
-        ### This slide was also generated in Markdown!
-        \`\`\`jsx
-        const evenCooler = "is that you can do code in Markdown";
-        // You can even specify the syntax type!
-        \`\`\`
-        ### A slide can have multiple code blocks too.
-        \`\`\`c
-        char[] someString = "Popular languages like C too!";
-        \`\`\`
-        Notes: These are more notes
-      `}
-    </Markdown>
   </Deck>
 );
 

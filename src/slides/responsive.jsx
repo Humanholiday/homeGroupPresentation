@@ -59,7 +59,9 @@ export default class Responsive extends React.Component {
           {responseCodeBlock}
         </CodePane>
 
-        <Text>Use chrome dev tools to ensure form is responsive </Text>
+        <Heading margin="10px 62px" color="quaternary" fontSize="40px">
+          Use chrome dev tools to ensure form is responsive
+        </Heading>
       </div>
     );
   }

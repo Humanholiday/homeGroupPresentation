@@ -1,4 +1,7 @@
 import React from "react";
+import reactLogo from "../React.svg";
+import sassLogo from "../Sass.svg";
+import "../App.scss";
 import {
   Appear,
   Box,
@@ -41,6 +44,10 @@ export default class Intro extends React.Component {
             Create a Login screen with a clean, attractive, responsive and
             interactive UI.
           </Heading>
+          <div>
+            <img className="reactLogo" src={reactLogo} />
+            <img className="sassLogo" src={sassLogo} />
+          </div>
         </FlexBox>
         <Notes>
           <p>

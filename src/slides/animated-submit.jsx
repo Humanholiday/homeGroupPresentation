@@ -59,7 +59,9 @@ export default class AnimatedSubmit extends React.Component {
           {submitCodeBlock}
         </CodePane>
 
-        <Text> The react-progress-button component adds animation</Text>
+        <Heading margin="10px 62px" color="quaternary" fontSize="40px">
+          The react-progress-button component adds animation
+        </Heading>
 
         <div className="button">
           <ProgressButton

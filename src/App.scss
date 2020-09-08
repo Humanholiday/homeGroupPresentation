@@ -6,11 +6,25 @@
 }
 
 .logo {
-  width: 10em;
+  width: 9em;
   position: absolute;
   margin-bottom: 10em;
   margin-left: 2em;
   opacity: 0.2;
+}
+
+.reactLogo {
+  width: 20em;
+  margin-right: 100px;
+  margin-top: 2em;
+}
+.sassLogo {
+  width: 15em;
+  margin-bottom: 1em;
+}
+
+.initialText {
+  margin: 0 auto;
 }
 
 .App-logo {
