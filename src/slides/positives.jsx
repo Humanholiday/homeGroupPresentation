@@ -28,7 +28,7 @@ export default class Positives extends React.Component {
     return (
       <div>
         <Heading>Positives</Heading>
-        <UnorderedList>
+        <UnorderedList color="quaternary">
           <ListItem>
             <CodeSpan>So much fun!</CodeSpan>
           </ListItem>

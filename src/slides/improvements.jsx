@@ -28,7 +28,7 @@ export default class Improvements extends React.Component {
     return (
       <div>
         <Heading>Improvements</Heading>
-        <UnorderedList>
+        <UnorderedList color="quaternary">
           <ListItem>
             <CodeSpan>More refactoring</CodeSpan>
           </ListItem>
@@ -36,7 +36,7 @@ export default class Improvements extends React.Component {
             <CodeSpan>Some redundant css</CodeSpan>
           </ListItem>
           <ListItem>
-            <CodeSpan>Add toggle component for a sign-up form</CodeSpan>
+            <CodeSpan>Design for accessibility</CodeSpan>
           </ListItem>
         </UnorderedList>
       </div>

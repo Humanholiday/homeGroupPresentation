@@ -28,16 +28,12 @@ export default class Final extends React.Component {
     return (
       <div>
         <FlexBox height="100%" flexDirection="column">
-          <Heading margin="0px" fontSize="70px">
+          <Heading margin="100px" fontSize="70px">
             <i>Thank You</i>
           </Heading>
           <Heading margin="0px" fontSize="h2">
             Source code for both projects is available on my GitHub profile
             (github.com/Humanholiday)
-          </Heading>
-          <Heading margin="0px 32px" color="primary" fontSize="45px">
-            Spectacle - A React.js based library for creating presentations
-            using JSX syntax that gives you the ability to live demo your code.
           </Heading>
         </FlexBox>
         <Notes>

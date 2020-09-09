@@ -9,7 +9,6 @@ import AddInteractive from "./slides/add-interactive";
 import AnimatedSubmit from "./slides/animated-submit";
 import Validation from "./slides/validation";
 import Responsive from "./slides/responsive";
-import TidyUp from "./slides/tidy-up";
 import Positives from "./slides/positives";
 import Improvements from "./slides/improvements";
 import BonusIntro from "./slides/bonus-intro";
@@ -17,37 +16,15 @@ import PresPositives from "./slides/pres-positives";
 import PresImprovements from "./slides/pres-improve";
 import Final from "./slides/final";
 import "./images/HGLoginFull.png";
-import { theme, template, cppCodeBlock } from "./theme";
-import {
-  Appear,
-  Box,
-  CodePane,
-  CodeSpan,
-  Deck,
-  FlexBox,
-  FullScreen,
-  Grid,
-  Heading,
-  Image,
-  ListItem,
-  Markdown,
-  Notes,
-  OrderedList,
-  Progress,
-  Slide,
-  SpectacleLogo,
-  Stepper,
-  Text,
-  UnorderedList,
-  indentNormalizer,
-} from "spectacle";
+import { theme, template } from "./theme";
+import { Deck, Slide } from "spectacle";
 
 const Presentation = () => (
   <Deck theme={theme} template={template} transitionEffect="fade">
     <Slide
-      backgroundImage="src(./images/HGLoginFull.png)"
-      backgroundOpacity={0.8}
-      backgroundSize="50%"
+      backgroundImage="url(https://github.com/Humanholiday/homeGroupPresentation/blob/master/src/images/HGLoginFull.png?raw=true)"
+      backgroundOpacity={0.4}
+      backgroundSize="100%"
     >
       <Title />
     </Slide>
@@ -84,15 +61,19 @@ const Presentation = () => (
       <Responsive />
     </Slide>
 
-    <Slide>
-      <TidyUp />
-    </Slide>
-
-    <Slide>
+    <Slide
+      backgroundImage="url(https://github.com/Humanholiday/homeGroupPresentation/blob/master/src/images/HGLoginFull.png?raw=true)"
+      backgroundOpacity={0.15}
+      backgroundSize="100%"
+    >
       <Positives />
     </Slide>
 
-    <Slide>
+    <Slide
+      backgroundImage="url(https://github.com/Humanholiday/homeGroupPresentation/blob/master/src/images/HGLoginFull.png?raw=true)"
+      backgroundOpacity={0.15}
+      backgroundSize="100%"
+    >
       <Improvements />
     </Slide>
 

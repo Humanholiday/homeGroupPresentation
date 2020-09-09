@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.scss";
 import {
   Appear,
   Box,
@@ -28,11 +29,11 @@ export default class Title extends React.Component {
     return (
       <div>
         <FlexBox height="100%">
-          <Heading margin="0px" fontSize="120px">
-            <div>Design to Reality Login Screen</div>
+          <Heading margin="-2px" fontSize="80px">
+            <div>Login Screen</div>
           </Heading>
         </FlexBox>
-        <Heading color="primary" fontSize="45px">
+        <Heading className="PresentedBy" color="quaternary" fontSize="45px">
           Presented by Jack Healy
         </Heading>
       </div>

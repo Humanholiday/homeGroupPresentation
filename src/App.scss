@@ -13,6 +13,12 @@
   opacity: 0.2;
 }
 
+.PresentedBy {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
 .reactLogo {
   width: 20em;
   margin-right: 100px;
@@ -25,41 +31,6 @@
 
 .initialText {
   margin: 0 auto;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 //Submit button
@@ -177,25 +148,6 @@
       transform: translate(-50%, -50%) rotate(360deg);
       transform-origin: center center;
     }
-  }
-}
-
-.checkbox {
-  vertical-align: bottom;
-  width: 13px !important;
-  height: 13px !important;
-  appearance: none;
-  outline: 0;
-  border: 1px solid $base-green;
-  border-radius: 2px;
-  box-shadow: none;
-  font-size: 2em;
-  &:hover {
-    box-shadow: 0 0 2px 0.1px $base-green;
-  }
-  &:checked {
-    background-color: $base-green;
-    outline: 0;
   }
 }
 

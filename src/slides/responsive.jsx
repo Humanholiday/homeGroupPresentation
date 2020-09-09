@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  theme,
-  template,
-  formidableLogo,
-  interCodeBlock,
-  responseCodeBlock,
-} from "../theme";
-import ProgressButton from "react-progress-button";
-import ToggleButton from "react-bootstrap/ToggleButton";
+import { responseCodeBlock } from "../theme";
+
 import "../App.scss";
 import {
   Appear,
@@ -34,34 +27,30 @@ import {
 } from "spectacle";
 
 export default class Responsive extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { buttonState: "" };
-    this.state = { checked: true };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  //onClick function to call the button animation depending on the result of email and password validation. Valid entry = green tick. Invalid entry = red cross.
-  handleClick() {
-    this.setState({ buttonState: "loading" });
-    // make asynchronous call
-    setTimeout(() => {
-      this.setState({ buttonState: "success" });
-    }, 1500);
-  }
-
   render() {
     return (
       <div>
-        <Heading>Responsive</Heading>
+        <Heading>Tidying Up</Heading>
 
         <CodePane fontSize={18} language="css" autoFillHeight="true">
           {responseCodeBlock}
         </CodePane>
 
         <Heading margin="10px 62px" color="quaternary" fontSize="40px">
-          Use chrome dev tools to ensure form is responsive
+          Use chrome dev tools to ensure form is responsive, refactor code,
+          tweak styling and update README.
         </Heading>
+        <Notes>
+          <p>
+            Once all of this was in place i worked on styling, refactoring and
+            making sure that the page was responsive and mobile friendly. I
+            found a CDN for the desired font for the background css styling. I
+            have tried to make my code concise and readable, I have also added
+            some notes so that my process and thinking is more clear. I
+            acknowledge that clean code should not require notes but in this
+            instance it is a failsafe!
+          </p>
+        </Notes>
       </div>
     );
   }

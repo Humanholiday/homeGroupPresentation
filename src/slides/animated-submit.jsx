@@ -72,6 +72,15 @@ export default class AnimatedSubmit extends React.Component {
             Sign In
           </ProgressButton>
         </div>
+        <Notes>
+          <p>
+            I found an animated progress button that i thought would work well
+            in place of back-end validation so I npm installed the relevant
+            package, copied the associated css and worked it into my app. I
+            adjusted some of the css to ensure the button fitted with my basic
+            styling.
+          </p>
+        </Notes>
       </div>
     );
   }

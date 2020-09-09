@@ -121,6 +121,25 @@ export default class Validation extends React.Component {
             <p class="error">{this.state.errors.password}</p>
           </div>
         </div>
+        <Notes>
+          <p>
+            I found some online examples of front-end validation and used these
+            as a guide to build my code. I wanted it to be responsive to the
+            users input without immediately showing an error if they were not
+            finished typing. I built functions for the onChange and blur events
+            so the error would show if the user enters then leaves the input
+            with invalid data.The error state will change if the user returns
+            and completes the entry (this time without having to leave the
+            input).
+          </p>
+          <p>
+            Once i had the front-end validation in place, I passed the error and
+            email/password value parameters to the sign in button. This meant i
+            could alter the onClick function so the error animation shows if the
+            user has inputted an invalid or empty email or password. A success
+            animation shows if both the email and password are valid.
+          </p>
+        </Notes>
       </div>
     );
   }
