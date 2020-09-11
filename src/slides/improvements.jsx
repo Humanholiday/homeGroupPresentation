@@ -38,7 +38,30 @@ export default class Improvements extends React.Component {
           <ListItem>
             <CodeSpan>Design for accessibility</CodeSpan>
           </ListItem>
+          <ListItem>
+            <CodeSpan>Add sliding component for new user sign up</CodeSpan>
+          </ListItem>
+          <ListItem>
+            <CodeSpan>
+              Slight div height increase with OnClick animation
+            </CodeSpan>
+          </ListItem>
         </UnorderedList>
+
+        <Notes>
+          <p>
+            I could simplify the code more, and could likely improve the
+            component structure. within that refactoring i could work through
+            the css and remove some redundant parts. i didnt do this as i wanted
+            to stick to my original deadline and also move onto other areas of
+            learning.
+          </p>
+          <p>
+            This task was aesthetically focused so i didnt consider the impact
+            of users with acessibility needs. I would like to include this
+            thinking in my work in the future.
+          </p>
+        </Notes>
       </div>
     );
   }

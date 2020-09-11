@@ -28,7 +28,7 @@ export default class PresPositives extends React.Component {
     return (
       <div>
         <Heading>Presentation Positives</Heading>
-        <UnorderedList>
+        <UnorderedList color="quaternary">
           <ListItem>
             <CodeSpan>More coding fun</CodeSpan>
           </ListItem>
@@ -39,7 +39,10 @@ export default class PresPositives extends React.Component {
             <CodeSpan>Built in presenter mode</CodeSpan>
           </ListItem>
           <ListItem>
-            <CodeSpan>Another great learning experience</CodeSpan>
+            <CodeSpan>Better understanding of jsx libraries</CodeSpan>
+          </ListItem>
+          <ListItem>
+            <CodeSpan>Another great developmental experience</CodeSpan>
           </ListItem>
         </UnorderedList>
       </div>

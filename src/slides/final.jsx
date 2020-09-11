@@ -36,16 +36,6 @@ export default class Final extends React.Component {
             (github.com/Humanholiday)
           </Heading>
         </FlexBox>
-        <Notes>
-          <p>
-            Built with React Sass My Objective To create a Login screen with a
-            clean, attractive, responsive and interactive UI. To add
-            interactivity where possible, with cursor highlighting, form
-            validation and an animated Sign In button. Use a sympathetic colour
-            palette. Packages - Outside of the standard dependencies created by
-            create-react-app and installing Sass I used - react-progress-button
-          </p>
-        </Notes>
       </div>
     );
   }

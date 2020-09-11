@@ -33,15 +33,25 @@ export default class Positives extends React.Component {
             <CodeSpan>So much fun!</CodeSpan>
           </ListItem>
           <ListItem>
-            <CodeSpan>Primary objective achieved</CodeSpan>
+            <CodeSpan>Primary design objective achieved</CodeSpan>
+          </ListItem>
+          <ListItem>
+            <CodeSpan>Increased understanding of React and Sass</CodeSpan>
           </ListItem>
           <ListItem>
             <CodeSpan>Pleased with the additional interactivity</CodeSpan>
           </ListItem>
           <ListItem>
-            <CodeSpan>A great learning experience</CodeSpan>
+            <CodeSpan>A great developmental experience</CodeSpan>
           </ListItem>
         </UnorderedList>
+        <Notes>
+          <p>
+            As my first solo front end project i was very happy with the result
+            and also really motivated by the experience. I loved every minute of
+            it, including the parts when io was pulling my hair out.
+          </p>
+        </Notes>
       </div>
     );
   }

@@ -50,6 +50,24 @@ export default class Responsive extends React.Component {
             acknowledge that clean code should not require notes but in this
             instance it is a failsafe!
           </p>
+          <p>
+            REFACTORING - SASS - created separate files for variables, index and
+            app, ensure variables are used widely, nest some syntax
+          </p>
+          <p>
+            REFACTORING - react - tweaked components structure with a main
+            layout component with the header, form and contact components within
+            it. remove redundant code and check for repeated expressions
+          </p>
+          <p>
+            STYLING - lots of adjusting css to ensure proportions are correct,
+            especially following the responsive adjustments
+          </p>
+          <p>
+            README - write in markdown and ensure that the project overview and
+            purpose is clear and instructions are there for people that may want
+            to download and run the project.
+          </p>
         </Notes>
       </div>
     );
