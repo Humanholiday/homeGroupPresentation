@@ -40,6 +40,19 @@ export default class InitialDesign extends React.Component {
           thought were needed. I started with a basic header and form and did
           some basic styling.
         </Heading>
+        <Notes>
+          <p>
+            MY first step was to create the main login container in my App.js
+            file. I styled this so that the basic positioning and format was in
+            place.
+          </p>
+          <p>
+            After that i created the component file structure of the layout,
+            header, sign in form, sign in button and contact components. I
+            entered some starter code into these component files and did some
+            basic styling so that the layout framework was in place.
+          </p>
+        </Notes>
       </div>
     );
   }

@@ -51,12 +51,21 @@ export default class Intro extends React.Component {
         </FlexBox>
         <Notes>
           <p>
-            Built with React Sass My Objective To create a Login screen with a
-            clean, attractive, responsive and interactive UI. To add
-            interactivity where possible, with cursor highlighting, form
-            validation and an animated Sign In button. Use a sympathetic colour
-            palette. Packages - Outside of the standard dependencies created by
-            create-react-app and installing Sass I used - react-progress-button
+            I had been learning React and Sass as part of an online course,
+            following along with the instructor. I knew i was making good
+            progress but felt that i needed to step away from the hand holding
+            of the course and test what i had learned in a small project of my
+            own devising. I chose to create a login screen using React and Sass.
+            While my other courses have been largely a mix of front end and back
+            end, this project would be front end focused only.
+          </p>
+          <p>
+            My Objective To create a Login screen with a clean, attractive,
+            responsive and interactive UI. To add interactivity where possible,
+            with cursor highlighting, form validation and an animated Sign In
+            button. Use a sympathetic colour palette. Packages - Outside of the
+            standard dependencies created by create-react-app and installing
+            Sass I used - react-progress-button
           </p>
         </Notes>
       </div>
